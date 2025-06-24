@@ -56,13 +56,13 @@ app.post('/generatepass', (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'siribethi98@gmail.com',
+        user: 'email@.com',
         pass: 'opfx yrwc exqf ffkt'
       }
     });
 
     const mailoptions = {
-      from: 'siribethi98@gmail.com',
+      from: 'email@gmail.com',
       to: email,
       subject: 'Your MediStock Password',
       text: `Your password is: ${password}`
@@ -107,13 +107,13 @@ app.post('/order', (req, res) => {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'siribethi98@gmail.com',
+        user: 'email@gmail.com',
         pass: 'opfx yrwc exqf ffkt'
       }
     });
 
     const mailoptions = {
-      from: 'siribethi98@gmail.com',
+      from: 'semail@gmail.com',
       to: email,
       subject: 'Order Confirmation - MediStock',
       text: `You have ordered ${quantity} units of ${medicinename}`
